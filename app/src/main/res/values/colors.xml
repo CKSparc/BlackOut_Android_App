@@ -1,0 +1,15 @@
+<resources>
+    <color name="background_red">#D91E18</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="apptheme_color">#d91e18</color>
+    <color name="light_red_button">#FF6347</color>
+    <color name="pressed_red_button">#F22613</color>
+    <color name="focused_red_button">#CF000F</color>
+    <color name="text_color">#CF000F</color>
+    <color name="light_red_background">#FFE5E5</color>
+
+    <color name="swipeRefresh1">#F22613</color>
+    <color name="swipeRefresh2">#96281B</color>
+    <color name="swipeRefresh3">#CF000F</color>
+    <color name="swipeRefresh4">#96281B</color>
+</resources>

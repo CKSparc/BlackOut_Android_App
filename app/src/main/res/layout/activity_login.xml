@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michael.blackout.com.example.michael.blackout.ui.LoginActivity"
+    style="@style/AuthBackground">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        style="@style/AuthSubTitle" />
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+       style="@style/AuthFieldContainer">
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:hint="@string/username_hint"
+           style="@style/AuthEditText">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"
+            style="@style/AuthEditText"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:text="@string/login_button_label"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_alignParentLeft="true"
+       style="@style/AuthButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_text"
+        android:id="@+id/signUpTxt"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/login_button"
+        android:layout_alignRight="@+id/subTitle"
+        android:layout_alignEnd="@+id/subTitle" />
+
+
+</RelativeLayout>

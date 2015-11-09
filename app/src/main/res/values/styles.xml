@@ -1,0 +1,183 @@
+<resources>
+
+    <style name="Theme.Blackout" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_blackout</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Blackout</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Blackout</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Blackout</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Blackout</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Blackout</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_blackout</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_blackout</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Blackout</item>
+        <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Blackout.Overflow</item>
+        <item name="android:listViewStyle">@style/Theme.Blackout.LightRedBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Blackout.LightRedBackground.GridView</item>
+
+
+    </style>
+
+    <style name="Theme.Blackout.LightRedBackground">
+        <item name="android:background">@color/light_red_background</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="Theme.Blackout.LightRedBackground.GridView">
+        <item name="android:padding">@dimen/user_grid_spacing</item>
+    </style>
+
+    <style name="Theme.Blackout.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_menu_overflow</item>
+    </style>
+
+    <style name="ActionBar.Solid.Blackout" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_blackout</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_blackout</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_blackout</item>
+        <item name="progressBarStyle">@style/ProgressBar.Blackout</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Blackout.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.Solid.Blackout.TitleTextStyle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:text">Black Out</item>
+        <item name="android:textColor">@color/background_red</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Blackout" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_blackout</item>
+        <item name="progressBarStyle">@style/ProgressBar.Blackout</item>
+    </style>
+
+    <style name="PopupMenu.Blackout" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_blackout</item>
+    </style>
+
+    <style name="DropDownListView.Blackout" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_blackout</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Blackout" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_blackout</item>
+    </style>
+
+    <style name="DropDownNav.Blackout" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_blackout</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_blackout</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_blackout</item>
+    </style>
+
+    <style name="ProgressBar.Blackout" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_blackout</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Blackout" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_blackout</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Blackout.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Blackout</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Blackout</item>
+    </style>
+
+
+    <!--<style name="ButtonAppTheme" parent="android:Widget.Holo.Light.Button">-->
+        <!--<item name="android:background">@drawable/apptheme_btn_default_holo_light</item>-->
+    <!--</style>-->
+
+    <!--<style name="ImageButtonAppTheme" parent="android:Widget.Holo.Light.ImageButton">-->
+        <!--<item name="android:background">@drawable/apptheme_btn_default_holo_light</item>-->
+    <!--</style>-->
+
+    <style name="AuthBackground">
+        <item name="android:background">@mipmap/background_fill</item>
+    </style>
+
+    <style name="AuthBackgroundImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@mipmap/bo_main_bg</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:contentDescription">@string/content_desc_background</item>
+    </style>
+
+    <style name="AuthTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AuthSubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/subtitle</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AuthFieldContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@+id/subTitle</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:paddingLeft">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/login_horizontal_padding</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="AuthEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="AuthButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="GridImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
